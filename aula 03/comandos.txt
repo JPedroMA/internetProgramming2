@@ -1,0 +1,6 @@
+npm init
+criado o no scrypt no package.json o seguinte:  "start" : "nodemon index.js",
+npm i express mongoose mongodb nodemon dotenv
+
+conectado pelo roberto.buiatti@estudante.iftm.edu.br
+senha e usuario do database mongodb admin senha: 00zvhTKpa42cj5Fa
