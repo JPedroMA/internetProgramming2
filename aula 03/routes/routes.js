@@ -42,7 +42,31 @@ router.get('/getOne/:name', async (req, res) => {
 })
 
 //UPDATE
+router.patch('/update/:id', async(req, res) => {
+    try {
+        const id = req.params.id;
+        const updateData = req.body
+        const options = {new: true}
+
+        const result = await Model.findByIdAndDelete(id, updateData, options)
+
+        res.send(result) // testar res.status
+        // testar o strict mode
+    } catch (error) {
+        res.status(400).json({message: error.message})
+    }
+})
 
 //DELETE
+router.delete('/delete/:id', async(req, res) => {
+    try {
+        const id = req.params.id
+        const data = await Model.findByIdAndDelete(id)
+        res.status(200).json(`Documento com ${data.name} foi apagado...`)
+
+    } catch (error) {
+        res.status(400).json
+    }
+})
 
 module.exports = router
