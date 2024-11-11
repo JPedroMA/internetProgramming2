@@ -1,21 +1,13 @@
 {
-  "name": "aula3",
+  "name": "aula03_nodejs",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start" : "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [],
+  "author": "André Luiz França Batista",
   "license": "ISC",
-  "description": "Aula 03 - Nodejs Express Mongodb nodmon dotenv",
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.21.0",
-    "mongodb": "^6.9.0",
-    "mongoose": "^8.7.0",
-    "moongose": "^1.0.0",
-    "nodemon": "^3.1.7"
-  },
-  "keywords": []
+  "description": "Aula 03 - Nodejs Express Mongodb nodemon dotenv"
 }
